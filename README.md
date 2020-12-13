@@ -269,3 +269,34 @@ Client
         gateway 192.168.16.16
 
 ```
+### Routing
+```
+SURABAYA
+    PASURUAN
+        route add -net 192.168.128.0 netmask 255.255.128.0 gw 192.168.192.2
+    BATU
+        route add -net 192.168.0.0 netmask 255.255.128.0 gw 192.168.32.2
+        route add -net 10.151.83.92 netmask 255.255.255.252 gw 192.168.32.2
+PASURUAN
+    route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.192.1
+    PROBOLINGGO
+        route add -net 192.168.128.0 netmask 255.255.192.0 gw 192.168.144.2
+PROBOLINGGO
+    route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.144.1
+BATU
+    route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.32.1
+    MADIUN
+        route add -net 192.168.16.0  netmask 255.255.255.240 gw 192.168.16.18
+    KEDIRI
+        route add -net 10.151.83.92 netmask 255.255.255.252 gw 192.168.8.2
+        route add -net 192.168.0.0 netmask 255.255.240.0 gw 192.168.8.2
+MADIUN
+    route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.16.17
+KEDIRI 
+    route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.8.1
+    BLITAR
+        route add -net 192.168.0.0 netmask 255.255.255.0 gw 192.168.1.1
+BLITAR 
+    route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.1.2
+    
+```
