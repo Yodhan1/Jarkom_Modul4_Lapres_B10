@@ -300,3 +300,30 @@ BLITAR
     route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.1.2
     
 ```
+
+
+### VLSM
+
+Membagi topologi menjadi per subnet
+
+![](./img/topologi_cpt.PNG)
+
+lalu menghitung total IP
+
+![](./img/total_ip.PNG)
+
+Setelah itu, hitung VSLM tree nya
+
+![](./img/treeVLSM.PNG)
+
+lalu hitung pembagian NID
+
+![](./img/excel_cpt.PNG)
+
+lalu hitung Routing nya
+
+![](./img/routing_cpt.PNG)
+
+Setelah itu masukkan ke Cisco Packet Tracker
+
+![](./img/CPT.PNG)
